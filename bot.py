@@ -37,6 +37,12 @@ WEBSITE_ORIGINS = {
     ).split(",")
     if item.strip()
 }
+WEBSITE_ORIGINS.update(
+    {
+        "https://tardis-worlds.ru",
+        "https://www.tardis-worlds.ru",
+    }
+)
 AUTH_REQUEST_SECONDS = int(os.getenv("AUTH_REQUEST_SECONDS", "600"))
 SESSION_DAYS = int(os.getenv("SESSION_DAYS", "30"))
 
